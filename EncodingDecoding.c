@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #define DIM 100
 
@@ -18,7 +19,7 @@ int main(){
         int j=0;
         do{
             j=stringa[k]-48;
-            printf("%s"stringa[k]);
+            printf("%s", stringa[k]);
             if(j<=9 && j-48>=0){
                 for(int x=0; x<j; x++){
                     printf("%c", stringa[k]);
@@ -50,21 +51,3 @@ int main(){
         }
     }
 }
-
-    /*int cnt=1;
-    char stringa[DIM];
-    printf("inserisci un stringa: ");
-    scanf("%s", stringa);
-    for(int k=0;k<strlen(stringa);k++){
-        if(stringa[k]==stringa[k+1]){
-            cnt++;
-        }else{
-            if(cnt!=1){
-                printf("%d%c",cnt,stringa[k]);
-                cnt=1;
-            }else{
-                printf("%c",stringa[k]);
-                cnt=1;
-            }
-        }
-    }*/
